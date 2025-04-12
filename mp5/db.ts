@@ -1,6 +1,6 @@
 import { Collection, Db, MongoClient } from "mongodb";
 
-const MONGODB_URL = process.env.MONGODB as string;
+const MONGO_URI = process.env.MONGO_URI as string;
 const DB_NAME = "mp5";
 
 export const URL_COLLECTION = "url-collection";
@@ -10,7 +10,7 @@ let db: Db | null = null;
 
 async function connect(): Promise<Db> {
     if (!client) {
-        client = new MongoClient(MONGODB_URL);
+        client = new MongoClient(MONGO_URI);
         await client.connect();
     }
     return client.db(DB_NAME);
