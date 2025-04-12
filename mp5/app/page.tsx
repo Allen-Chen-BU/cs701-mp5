@@ -49,8 +49,8 @@ export default function Home() {
     <div className="h-screen flex flex-col justify-center">
       <div className="h-1/2 text-2xl">
         <p className="text-red-500 text-center">{warning}</p>
-        <label className="w-4/5 m-auto mb-4 flex flex-nowrap justify-center">Original URL:<input onChange={(e) => setUrl(e.target.value)} className="border w-150 ml-2 px-1.5" placeholder="URL"></input></label>
-        <label className="w-4/5 m-auto mb-4 flex flex-nowrap justify-center">{currPath}<input onChange={(e) => setAlias(e.target.value)} className="border w-80 ml-2 px-1.5" placeholder="Unique Alias"></input></label>
+        <label className="w-4/5 m-auto mb-4 flex flex-nowrap justify-center">Original URL:<input onChange={(e) => setUrl(e.target.value)} className="border w-150 ml-2 px-1.5" placeholder="URL"/></label>
+        <label className="w-4/5 m-auto mb-4 flex flex-nowrap justify-center">{currPath}<input onChange={(e) => setAlias(e.target.value)} className="border w-80 ml-2 px-1.5" placeholder="Unique Alias"/></label>
         <div className="w-full flex justify-center">
           <button onClick={handleClick} className="text-white font-bold rounded w-20 m-auto mb-4 cursor-pointer p-2 bg-sky-400 hover:bg-sky-500">Enter</button>
         </div>
